@@ -1,0 +1,234 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/templateFW.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Yubee Ice cream</title>
+<!-- InstanceEndEditable -->
+<link rel="stylesheet" href="css/bootstrap-4.3.1.css" type="text/css">
+<link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/MAIN-STYLE.css" type="text/css">	
+<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" href="css/shop.css" type="text/css">
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+	<!--	SHOP BOX-->
+	<div class="modal fade" id="shopping-box">
+		
+		<div class="modal-dialog modal-lg">
+		   <div class="modal-content">
+		    
+			   <div class="modal-body">
+          <div class="cart-row d-flex">
+			  <span class="cart-item cart-header cart-column">ITEM</span>
+			  <span class="cart-price cart-header cart-column">PRICE</span> 
+			  <span class="cart-quantity cart-header cart-column">QUANTITY</span> 
+			</div>
+          <div class="cart-items"> </div>
+          <div class="cart-total"> <strong class="cart-total-title">Total</strong><span> $</span> <span class="cart-total-price text-danger">0</span> </div>
+          <button class="btn btn-danger btn-purchase" type="button" onClick="thanhtoan()">Thanh toán</button>
+        </div>
+			
+		  </div>
+		</div>
+	
+	</div>
+<!--	het-->
+	<header>
+	<nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top shadow">
+		<div class="container">
+			<a href="index.html" class="navbar-brand"><img src="images/logo.png"></a>
+			<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="navbar-collapse collapse" id="menu">
+				<ul class="navbar-nav mx-auto">
+					<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+					<li class="nav-item"><a href="about.html" class="nav-link">About us</a></li>
+					<li class="nav-item"><a href="SHOP.html" class="nav-link">Shop</a></li>
+					<li class="nav-item dropdown ">
+						<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Services</a>
+						<div class="dropdown-menu bg-primary">
+							<a href="our-staff.html" class="dropdown-item">Our Staff</a>
+							<a href="our-recipie.html" class="dropdown-item">Our Recipies</a>
+							<a href="our-prices.html" class="dropdown-item">Our Prices</a>
+						</div>
+					</li>
+					<li class="nav-item"><a href="blog.html" class="nav-link">Blogs</a></li>
+					<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+				</ul>
+				
+				
+				
+				<div class="navbar-text">
+					
+		<a href="#" data-toggle="modal" data-target="#shopping-box">
+				<i class="fa fa-shopping-cart fa-2x"></i>
+			   <span class="text-danger" id="sl">0</span>
+		</a>	
+					
+				<i class="fa fa-search fa-2x ml-3"></i>
+				</div>
+			</div>
+		 </div>
+	</nav>
+	
+	
+	</header>
+	
+	<!-- InstanceBeginEditable name="ndung" -->
+	<div class="tieude-trang text-center"> About us
+        <p>Index / about</p>
+	</div>
+	<main>
+		
+		<div class="row our-story">
+			
+			<div class="col-md-4 text-center m-5 px-3">
+			   <h1>Our Story</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nisi et dolor ornare pellentesque. Nullam porttitor, odio id facilisis dapibus</p>
+				<a class="btn btn-green text-light" href="#" role="button">Read more</a>
+			</div>
+		
+		</div>
+		
+		
+		<section id="welcome" class="py-4 ">
+		     <div class="container white50">
+			 <div class="row">
+					<div class="col-md-6 mx-auto text-center" >
+						<img src="images/icon-section.png" alt="">
+						<h1>Our Special</h1>
+					</div>	
+				</div>
+			 
+			  <div class="row my-3 justify-content-between">
+				 
+				 <div class="col-md-6">
+				   <img src="images/about/Rectangle 89.jpg" class="img-fluid">
+					 <img src="images/about/Our special (1).png" class="about1-img img-fluid" >
+				 </div>
+				 
+				  <div class="col-md-4 my-5">
+				   <img src="images/about/bell.png " width="30px" class="my-3 img-fluid">
+					  <h3>Enjoy Movement Tasty Ice Cream</h3>
+					  <p class="p-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+
+</p>
+				 </div>
+				   
+			  </div> 
+				 
+				 		 
+			  <div class="row my-3 justify-content-between">
+
+				  <div class="col-md-4 my-5">
+				   <img src="images/about/star.png " width="30px" class="my-3 img-fluid">
+					  <h3>Tasty Flavoured Grape Scoop Cream</h3>
+					  <p class="p-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+				 </div>
+				  
+				  <div class="col-md-6">
+				   <img src="images/about/Rectangle 90.jpg" class="img-fluid">
+					 <img src="images/about/Our special (2).png" class="about2-img img-fluid" >
+				 </div>
+				   
+			  </div> 
+				 
+				 		 
+			  <div class="row my-3 justify-content-between">
+				 
+				 <div class="col-md-6">
+				   <img src="images/about/Rectangle 91.jpg" class="img-fluid">
+					 <img src="images/about/Our special (3).png" class="about1-img img-fluid" >
+				 </div>
+				 
+				  <div class="col-md-4 my-5">
+				   <img src="images/about/leaf.png " width="30px" class="my-3 img-fluid">
+					  <h3>Outlook Decoration Ice Coffee Cream</h3>
+					  <p class="p-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+
+</p>
+				 </div>
+				   
+			  </div> 
+				 
+				  
+				 
+				
+				 
+		      </div>
+			 
+		</section>
+		<div class="my-md-4">
+		    <div class="row">
+					<div class="col-md-6 mx-auto text-center" >
+						<img src="images/about/icon-5_small 2.png" alt="">
+						<h1>Our Standarts</h1>
+					</div>	
+				</div>
+			 <img src="images/about/standard.jpg" class="img-fluid " >
+			</div>
+	</main>
+	<!-- InstanceEndEditable -->
+<footer>
+  <div class="container text-light">
+		<div class="row justify-content-between">
+		<div class="col-md-4">
+			<img src="images/logo-footer.png">
+		  <p class="mt-4">Lorem ipsum dolor sit amet, matti consectetuer adipiscing  suspendisse et justo.  Praesent mattis ugue
+		  </p>
+			<div class="my-3">
+				<span class="fa-stack fa-lg">
+				  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+				  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+				</span>
+				<span class="fa-stack fa-lg">
+				  <i class="fa fa-circle fa-stack-2x text-danger"></i>
+				  <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+				</span>
+					<span class="fa-stack fa-lg">
+				  <i class="fa fa-circle fa-stack-2x text-info"></i>
+				  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+				</span>
+					<span class="fa-stack fa-lg">
+				  <i class="fa fa-circle fa-stack-2x text-danger"></i>
+				  <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+				</span>
+			
+			</div>
+			
+			
+			</div>
+		<div class="col-md-3">
+			<h4>Open Hours</h4>
+			<p><b>Monday:</b> Closed </p>
+		<p><b>
+			Tuesday to Friday:</b><br>
+			7:00 AM - 9:00 PM</p>
+			<p><b>Saturday to Sunday:</b><br>11:00 AM - 10:00 PM
+</p>
+			</div>
+		
+		<div class="col-md-4">
+			<h4>Find us</h4>
+		<p>Address:  75/68 Hoang Sa F9, Q3, Tp.HCM</p>
+		</div>
+		</div>
+	</div>
+<div class="row border-top text-light py-4 text-center justify-content-center p-12">
+	Copyright © 2020 Yupee Store. 	
+		
+		</div>
+	</footer>
+	
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/shop.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap-4.3.1.js"></script>
+</body>
+<!-- InstanceEnd --></html>

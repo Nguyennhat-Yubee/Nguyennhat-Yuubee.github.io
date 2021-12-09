@@ -1,0 +1,664 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/templateFW.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Yubee Ice cream</title>
+<!-- InstanceEndEditable -->
+<link rel="stylesheet" href="css/bootstrap-4.3.1.css" type="text/css">
+<link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/MAIN-STYLE.css" type="text/css">	
+<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" href="css/shop.css" type="text/css">
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+	<!--	SHOP BOX-->
+	<div class="modal fade" id="shopping-box">
+		
+		<div class="modal-dialog modal-lg">
+		   <div class="modal-content">
+		    
+			   <div class="modal-body">
+          <div class="cart-row d-flex">
+			  <span class="cart-item cart-header cart-column">ITEM</span>
+			  <span class="cart-price cart-header cart-column">PRICE</span> 
+			  <span class="cart-quantity cart-header cart-column">QUANTITY</span> 
+			</div>
+          <div class="cart-items"> </div>
+          <div class="cart-total"> <strong class="cart-total-title">Total</strong><span> $</span> <span class="cart-total-price text-danger">0</span> </div>
+          <button class="btn btn-danger btn-purchase" type="button" onClick="thanhtoan()">Thanh toán</button>
+        </div>
+			
+		  </div>
+		</div>
+	
+	</div>
+<!--	het-->
+	<header>
+	<nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top shadow">
+		<div class="container">
+			<a href="index.html" class="navbar-brand"><img src="images/logo.png"></a>
+			<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="navbar-collapse collapse" id="menu">
+				<ul class="navbar-nav mx-auto">
+					<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+					<li class="nav-item"><a href="about.html" class="nav-link">About us</a></li>
+					<li class="nav-item"><a href="SHOP.html" class="nav-link">Shop</a></li>
+					<li class="nav-item dropdown ">
+						<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Services</a>
+						<div class="dropdown-menu bg-primary">
+							<a href="our-staff.html" class="dropdown-item">Our Staff</a>
+							<a href="our-recipie.html" class="dropdown-item">Our Recipies</a>
+							<a href="our-prices.html" class="dropdown-item">Our Prices</a>
+						</div>
+					</li>
+					<li class="nav-item"><a href="blog.html" class="nav-link">Blogs</a></li>
+					<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+				</ul>
+				
+				
+				
+				<div class="navbar-text">
+					
+		<a href="#" data-toggle="modal" data-target="#shopping-box">
+				<i class="fa fa-shopping-cart fa-2x"></i>
+			   <span class="text-danger" id="sl">0</span>
+		</a>	
+					
+				<i class="fa fa-search fa-2x ml-3"></i>
+				</div>
+			</div>
+		 </div>
+	</nav>
+	
+	
+	</header>
+	
+	<!-- InstanceBeginEditable name="ndung" -->
+	<main>
+	
+		<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/banner1.jpg" class="img-fluid">
+    </div>
+    <div class="carousel-item">
+      <img src="images/banner-2.jpg" class="img-fluid"  >
+    </div>
+    <div class="carousel-item">
+      <img src="images/banner-3.jpg" class="img-fluid">
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+<!--het CArousel banner-->
+		
+<!--section1-->
+		<section id="welcome" class="py-4 " >
+			<div class="container white50">
+				
+				<div class="row">
+					<div class="col-md-6 mx-auto text-center" >
+						<img src="images/icon-section.png" alt="">
+						<h1 class="text-uppercase"> welcome to Ice cream</h1>
+					</div>	
+				</div>
+
+				<div class="row text-center">
+					<div class="col-md-4">
+							<div class="p-2 w-me">
+						        <img src="images/wel 1.jpg" class="img-fluid rounded-circle">
+								<div class="w-text"> 
+								   <h2>GET THE BEST FOR 30% Off</h2>
+									<p>on products</p>
+								</div>
+							</div>
+						<h4>Hot Chocolate Cream</h4>
+						<p>Choco chips</p>	
+					</div>
+					
+					<div class="col-md-4">
+							<div class="p-2 w-me">
+						        <img src="images/wel 2.jpg" class="img-fluid rounded-circle">
+								<div class="w-text"> 
+								   <h2>GET THE BEST FOR 30% Off</h2>
+									<p>on products</p>
+								</div>
+							</div>
+						<h4>Cool Scoop Ice Cream</h4>
+						<p>Coffee</p>	
+					</div>
+					
+					<div class="col-md-4">
+							<div class="p-2 w-me">
+						        <img src="images/wel 3.jpg" class="img-fluid rounded-circle">
+								<div class="w-text"> 
+								   <h2>GET THE BEST FOR 30% Off</h2>
+									<p>on products</p>
+								</div>
+							</div>
+						<h4>Banana With Chocolate</h4>
+						<p>Exotic Flavour</p>	
+					</div>
+					
+				</div>
+
+				
+			</div>
+			
+		
+		</section>
+<!-- het scetion 1			-->
+     <!-- section 2		-->
+		<section id="trending" class="py-4 ">
+			<div class="container white50">
+				
+				<div class="row">
+					<div class="col-md-6 mx-auto text-center" >
+						<img src="images/icon-section.png" alt="">
+						<h1 class="text-uppercase">Trending Products</h1>
+					</div>	
+				</div>
+		     </div>
+			<!-- Nav tabs -->
+<ul class="nav nav-tab justify-content-center" role="tablist">
+  <li class="nav-item vtron1 d-flex align-items-center justify-content-center " >
+    <a class="text-danger nav-link active" data-toggle="tab" href="#home">Butter Scotch</a>
+  </li>
+  <li class="nav-item vtron2 d-flex align-items-center justify-content-center ">
+    <a class=" text-info nav-link" data-toggle="tab" href="#menu1">Blue Moon</a>
+  </li>
+  <li class="nav-item vtron3 d-flex align-items-center justify-content-center ">
+    <a class="text-warning nav-link" data-toggle="tab" href="#menu2">Butter Pecan</a>
+  </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane container active" id="home">
+	  
+	<div class="row">
+<!--		1-->
+	  <div class="col-md-4 item">
+		  <div class="card text-center "> <img class="img-fluid shop-item-image" src="images/treding1.jpg">
+			  
+	       	<div class="trending-hover">
+				<p>
+					<span class="fa-stack fa-lg" >
+						<i class="fa fa-circle fa-stack-2x text-danger"></i>
+						<i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+					</span>
+					<span class="fa-stack fa-lg" >
+						<i class="fa fa-circle fa-stack-2x text-danger"></i>
+						<i class="fa fa-shopping-basket fa-stack-1x fa-inverse"></i>
+					</span>
+					<span class="fa-stack fa-lg" >
+						<i class="fa fa-circle fa-stack-2x text-danger"></i>
+						<i class="fa fa-star fa-stack-1x fa-inverse"></i>
+					</span>
+				</p>
+				<a class="shop-item-button btn btn-warning text-uppercase rounded-pill" href="#" role="button">Buy Now</a>
+			</div>	  
+			  
+		    <div class="card-body">
+		      <h5 class="card-title text-danger shop-item-title">Mexican chocolate</h5>
+		      <p class="card-text shop-item-price">$262.00</p>
+				<i class="fa fa-star text-warning mr-2"></i>
+							<i class="fa fa-star text-warning mr-2"></i>
+							<i class="fa fa-star text-warning mr-2"></i>
+							<i class="fa fa-star text-warning mr-2"></i>
+							<i class="fa fa-star text-warning mr-2"></i>
+					</div>
+		      </div>
+		    </div>
+<!--		2-->
+		  <div class="col-md-4 item">
+		  <div class="card text-center"> <img class="img-fluid shop-item-image" src="images/treding2.jpg">
+			  
+	       	<div class="trending-hover">
+				<p>
+					<span class="fa-stack fa-lg" >
+						<i class="fa fa-circle fa-stack-2x text-danger"></i>
+						<i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+					</span>
+					<span class="fa-stack fa-lg" >
+						<i class="fa fa-circle fa-stack-2x text-danger"></i>
+						<i class="fa fa-shopping-basket fa-stack-1x fa-inverse"></i>
+					</span>
+					<span class="fa-stack fa-lg" >
+						<i class="fa fa-circle fa-stack-2x text-danger"></i>
+						<i class="fa fa-star fa-stack-1x fa-inverse"></i>
+					</span>
+				</p>
+				<a class="shop-item-button btn btn-warning text-uppercase rounded-pill" href="#" role="button">Buy Now</a>
+			</div>	  
+			  
+		    <div class="card-body">
+		      <h5 class="card-title text-danger shop-item-title"> Chocolate Peanut</h5>
+		      <p class="card-text shop-item-price">$262.00</p>
+				<i class="fa fa-star text-warning mr-2"></i>
+							<i class="fa fa-star text-warning mr-2"></i>
+							<i class="fa fa-star text-warning mr-2"></i>
+							<i class="fa fa-star-o text-warning mr-2"></i>
+							<i class="fa fa-star-o text-warning mr-2"></i>
+					</div>
+		      </div>
+		    </div>
+<!--		3-->
+		<div class="col-md-4 item">
+		  <div class="card text-center"> <img class="img-fluid shop-item-image" src="images/treding3.jpg">
+			  
+	       	<div class="trending-hover">
+				<p>
+					<span class="fa-stack fa-lg" >
+						<i class="fa fa-circle fa-stack-2x text-danger"></i>
+						<i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+					</span>
+					<span class="fa-stack fa-lg" >
+						<i class="fa fa-circle fa-stack-2x text-danger"></i>
+						<i class="fa fa-shopping-basket fa-stack-1x fa-inverse"></i>
+					</span>
+					<span class="fa-stack fa-lg" >
+						<i class="fa fa-circle fa-stack-2x text-danger"></i>
+						<i class="fa fa-star fa-stack-1x fa-inverse"></i>
+					</span>
+				</p>
+				<a class="shop-item-button btn btn-warning text-uppercase rounded-pill" href="#" role="button">Buy Now</a>
+			</div>	  
+			  
+		    <div class="card-body">
+		      <h5 class="card-title text-danger shop-item-title"> Vanilla with Honey
+</h5>
+		      <p class="card-text shop-item-price">$262.00</p>
+				<i class="fa fa-star text-warning mr-2"></i>
+							<i class="fa fa-star text-warning mr-2"></i>
+							<i class="fa fa-star text-warning mr-2"></i>
+							<i class="fa fa-star text-warning mr-2"></i>
+							<i class="fa fa-star-o text-warning mr-2"></i>
+					</div>
+		      </div>
+		    </div>
+<!--		het-->
+ 		
+      </div>
+	</div>
+  </div>
+  <div class="tab-pane container fade" id="menu1">
+			
+				<div class="row">
+<!--4		-->
+	  		<div class="col-md-4 item">
+		  <div class="card text-center"> <img class="img-fluid shop-item-image" src="images/treding4.jpg">
+			  
+	       	<div class="trending-hover">
+				<p>
+					<span class="fa-stack fa-lg" >
+						<i class="fa fa-circle fa-stack-2x text-danger"></i>
+						<i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+					</span>
+					<span class="fa-stack fa-lg" >
+						<i class="fa fa-circle fa-stack-2x text-danger"></i>
+						<i class="fa fa-shopping-basket fa-stack-1x fa-inverse"></i>
+					</span>
+					<span class="fa-stack fa-lg" >
+						<i class="fa fa-circle fa-stack-2x text-danger"></i>
+						<i class="fa fa-star fa-stack-1x fa-inverse"></i>
+					</span>
+				</p>
+				<a class="shop-item-button btn btn-warning text-uppercase rounded-pill" href="#" role="button">Buy Now</a>
+			</div>	  
+			  
+		    <div class="card-body">
+		      <h5 class="card-title text-danger shop-item-title"> Banana With Chocolate
+</h5>
+		      <p class="card-text shop-item-price">$262.00</p>
+				<i class="fa fa-star text-warning mr-2"></i>
+							<i class="fa fa-star text-warning mr-2"></i>
+							<i class="fa fa-star text-warning mr-2"></i>
+							<i class="fa fa-star text-warning mr-2"></i>
+							<i class="fa fa-star text-warning mr-2"></i>
+					</div>
+		      </div>
+		    </div>
+<!--	5	-->
+		 	<div class="col-md-4 item">
+		  <div class="card text-center"> <img class="img-fluid shop-item-image" src="images/treding5.jpg">
+			  
+	       	<div class="trending-hover">
+				<p>
+					<span class="fa-stack fa-lg" >
+						<i class="fa fa-circle fa-stack-2x text-danger"></i>
+						<i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+					</span>
+					<span class="fa-stack fa-lg" >
+						<i class="fa fa-circle fa-stack-2x text-danger"></i>
+						<i class="fa fa-shopping-basket fa-stack-1x fa-inverse"></i>
+					</span>
+					<span class="fa-stack fa-lg" >
+						<i class="fa fa-circle fa-stack-2x text-danger"></i>
+						<i class="fa fa-star fa-stack-1x fa-inverse"></i>
+					</span>
+				</p>
+				<a class="shop-item-button btn btn-warning text-uppercase rounded-pill" href="#" role="button">Buy Now</a>
+			</div>	  
+			  
+		    <div class="card-body">
+		      <h5 class="card-title text-danger shop-item-title"> Blue Sicle
+</h5>
+		      <p class="card-text shop-item-price">$262.00</p>
+				<i class="fa fa-star text-warning mr-2"></i>
+							<i class="fa fa-star text-warning mr-2"></i>
+							<i class="fa fa-star text-warning mr-2"></i>
+							<i class="fa fa-star text-warning mr-2"></i>
+							<i class="fa fa-star text-warning mr-2"></i>
+					</div>
+		      </div>
+		    </div>
+<!--		6			-->
+  		 	<div class="col-md-4 item">
+		  <div class="card text-center"> <img class="img-fluid shop-item-image" src="images/treding6.jpg">
+			  
+	       	<div class="trending-hover">
+				<p>
+					<span class="fa-stack fa-lg" >
+						<i class="fa fa-circle fa-stack-2x text-danger"></i>
+						<i class="fa fa-search-plus fa-stack-1x fa-inverse"></i>
+					</span>
+					<span class="fa-stack fa-lg" >
+						<i class="fa fa-circle fa-stack-2x text-danger"></i>
+						<i class="fa fa-shopping-basket fa-stack-1x fa-inverse"></i>
+					</span>
+					<span class="fa-stack fa-lg" >
+						<i class="fa fa-circle fa-stack-2x text-danger"></i>
+						<i class="fa fa-star fa-stack-1x fa-inverse"></i>
+					</span>
+				</p>
+				<a class="shop-item-button btn btn-warning text-uppercase rounded-pill" href="#" role="button">Buy Now</a>
+			</div>	  
+			  
+		    <div class="card-body">
+		      <h5 class="card-title text-danger shop-item-title"> Choco lemon
+</h5>
+		      <p class="card-text shop-item-price">$262.00</p>
+				<i class="fa fa-star text-warning mr-2"></i>
+							<i class="fa fa-star text-warning mr-2"></i>
+							<i class="fa fa-star text-warning mr-2"></i>
+							<i class="fa fa-star text-warning mr-2"></i>
+							<i class="fa fa-star-o text-warning mr-2"></i>
+					</div>
+		      </div>
+		    </div>
+<!--					het-->
+			</div>
+			</div>
+<div class="tab-pane container fade" id="menu2">
+</div>
+			
+<!--		High Quality Services-->
+			
+		<div class="py-md-5" >
+				   
+          <div class="text-light row py-3 justify-content-center cam-bg " >
+		    <div class="row"><h1 class="py-3 text-light text-uppercase"> High Quality Services</h1></div>
+			<div class="row justify-content-center">
+				
+			<div class="  col-md-3 justify-content-center text-center my-4 ">
+				<img src="images/icon-hightqality1.png" width="62px">
+			    <h3 class="text-light">Ice Cream</h3>
+				<p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer.</p>
+				<a class="btn btn-warning rounded-pill text-light" href="#" role="button">Our Services</a>
+			</div>
+		    <div class=" col-md-3 justify-content-center text-center my-4 ">
+				<img src="images/icon-hightqality2.png" width="62px" >
+			    <h3 class="text-light">Ice Cream</h3>
+				<p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer.</p>
+				<a class="btn btn-warning rounded-pill text-light" href="#" role="button">Our Services</a>
+			</div>
+			<div class="  col-md-3 justify-content-center text-center my-4 ">
+				<img src="images/icon-hightqality3.png" width="62px">
+			    <h3 class="text-light">Ice Cream</h3>
+				<p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer.</p>
+				<a class="btn btn-warning rounded-pill text-light" href="#" role="button">Our Services</a>
+			</div>
+					   
+		   </div>	   
+					   
+				
+          </div>
+			
+		<section class=" my-5 py-4" id="flavour"> <div class="w-50 mx-auto text-center"> <img src="IMAGES/icon-flavour.png" class="dblock mx-auto"> <h2>Flavours of Ice Cream</h2> </div> <div class="container f-cream py-2 py-md-5">
+<div class="row d-flex justify-content-between my-5">
+			
+    <div class="col-md-4 d-flex my-3">
+		<div class="w-75 px-2 ">
+		     <h5>Stracciatella</h5>
+			 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+			 <div class="w-25"><img src="images/f1.jpg" class="rounded-circle img-fluid w-100" ></div>
+		</div>
+	
+	</div>
+	
+	<div class="col-md-4 d-flex flex-row-reverse my-3">
+		<div class="w-75 px-2 ">
+		     <h5>Bastani Sonnati</h5>
+			 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+			 <div class="w-25"><img src="images/f2.jpg" class="rounded-circle img-fluid w-100" ></div>
+		</div>
+	
+	</div>
+			
+</div>	
+			
+<!--		het dong 1	-->
+			<div class="row d-flex justify-content-around my-5">
+			
+    <div class="col-md-4 d-flex my-3">
+		<div class="w-75 px-2 ">
+		     <h5>Blue moon</h5>
+			 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+			 <div class="w-25"><img src="images/f3.jpg" class="rounded-circle img-fluid w-100" ></div>
+		</div>
+	
+	</div>
+	
+	<div class="col-md-4 d-flex flex-row-reverse my-3">
+		<div class="w-75 px-2 ">
+		     <h5>Raspberry Ripple</h5>
+			 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+			 <div class="w-25"><img src="images/f4.jpg" class="rounded-circle img-fluid w-100" ></div>
+		</div>
+	
+	</div>
+			
+</div>		
+<!--			het dong 2 -->
+		
+	<div class="row d-flex justify-content-between my-5">
+			
+    <div class="col-md-4 d-flex my-3">
+		<div class="w-75 px-2 ">
+		     <h5>Butter Brickle</h5>
+			 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+			 <div class="w-25"><img src="images/f5.jpg" class="rounded-circle img-fluid w-100" ></div>
+		</div>
+	
+	</div>
+	
+	<div class="col-md-4 d-flex flex-row-reverse my-3">
+		<div class="w-75 px-2 ">
+		     <h5>Rocky road</h5>
+			 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+			 <div class="w-25"><img src="images/f6.jpg" class="rounded-circle img-fluid w-100" ></div>
+		</div>
+	
+	</div>
+			
+</div>	
+<!--			het dong 3 -->
+	
+			</div>	
+<div class=" text-center ">
+	<a class="btn btn-warning rounded-pill text-light px-5 " href="#" role="button">
+			<p class="p-12 mt-3"> <strong>Multi Ice Cream </strong> <br>  Feel Cool</p>
+	</a>
+</div>
+	</section>
+			</div> 
+			
+<!--	our prices		-->
+			         <div class="text-light py-3 justify-content-center price-bg " >
+						 
+		    <div class="row justify-content-center"><h1 class="py-3 text-light ">Our Prices</h1></div>
+						 
+			<div class="row justify-content-center">
+				
+			<div class="  col-md-2 justify-content-center text-center my-4 ">
+				<img src="images/indexourprice/our (1).png" class="img-fluid" >
+			    
+			</div>
+		    <div class=" col-md-2 justify-content-center text-center my-4 ">
+				<img src="images/indexourprice/our (2).png" class="img-fluid" >
+			</div>
+			<div class="  col-md-2 justify-content-center text-center my-4 ">
+				<img src="images/indexourprice/our (3).png" class="img-fluid" >
+			</div>
+				<div class="  col-md-2 justify-content-center text-center my-4 ">
+				<img src="images/indexourprice/our (4).png" class="img-fluid" >
+			</div>
+					   
+		   </div>	   
+					   
+				
+          </div>
+<!--			our client-->
+	<div class="py-5" id="client">
+			<div class="col-md-6 mx-auto text-center white50 py-4" >
+						<img src="images/about/icon-5_small 2.png" >
+						<h1> Our Client Say</h1>
+			          
+	  </div>	
+		
+				<div class="row text-center justify-content-center white50" >
+					<div class="col-md-3">
+							<div class="p-2 staff-me">
+						        <img src="images/client1.jpg" class="img-fluid rounded-circle">
+							</div>
+						
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suspendisse feugiat eget ornare odio.</p>
+						<h6>- Diana Jone -</h6>
+						
+					</div>
+					
+					<div class="col-md-3">
+							<div class="p-2 staff-me">
+					          <img src="images/client2.jpg" class="img-fluid rounded-circle">
+								
+							</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suspendisse feugiat eget ornare odio.</p>
+						<h6>- Diana Jone -</h6>
+					</div>
+					
+					<div class="col-md-3">
+							<div class="p-2 staff-me">
+					          <img src="images/client3.jpg" class="img-fluid rounded-circle">
+								
+							</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suspendisse feugiat eget ornare odio.</p>	
+						<h6>- Diana Jone -</h6>
+					</div>
+			</div>
+	</div>
+		</section>	
+			
+			
+		
+		
+		
+
+			
+			
+
+		
+    </main>
+	
+	<!-- InstanceEndEditable -->
+<footer>
+  <div class="container text-light">
+		<div class="row justify-content-between">
+		<div class="col-md-4">
+			<img src="images/logo-footer.png">
+		  <p class="mt-4">Lorem ipsum dolor sit amet, matti consectetuer adipiscing  suspendisse et justo.  Praesent mattis ugue
+		  </p>
+			<div class="my-3">
+				<span class="fa-stack fa-lg">
+				  <i class="fa fa-circle fa-stack-2x text-primary"></i>
+				  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+				</span>
+				<span class="fa-stack fa-lg">
+				  <i class="fa fa-circle fa-stack-2x text-danger"></i>
+				  <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+				</span>
+					<span class="fa-stack fa-lg">
+				  <i class="fa fa-circle fa-stack-2x text-info"></i>
+				  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+				</span>
+					<span class="fa-stack fa-lg">
+				  <i class="fa fa-circle fa-stack-2x text-danger"></i>
+				  <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+				</span>
+			
+			</div>
+			
+			
+			</div>
+		<div class="col-md-3">
+			<h4>Open Hours</h4>
+			<p><b>Monday:</b> Closed </p>
+		<p><b>
+			Tuesday to Friday:</b><br>
+			7:00 AM - 9:00 PM</p>
+			<p><b>Saturday to Sunday:</b><br>11:00 AM - 10:00 PM
+</p>
+			</div>
+		
+		<div class="col-md-4">
+			<h4>Find us</h4>
+		<p>Address:  75/68 Hoang Sa F9, Q3, Tp.HCM</p>
+		</div>
+		</div>
+	</div>
+<div class="row border-top text-light py-4 text-center justify-content-center p-12">
+	Copyright © 2020 Yupee Store. 	
+		
+		</div>
+	</footer>
+	
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/shop.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap-4.3.1.js"></script>
+</body>
+<!-- InstanceEnd --></html>
